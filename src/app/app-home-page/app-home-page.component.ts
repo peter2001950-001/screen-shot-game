@@ -19,5 +19,6 @@ export class AppHomePageComponent implements OnInit {
   }
   start(){
     this.router.navigate(["game"])
+    this.counter.up("screen-shot-game", "single-game-play", true);
   }
 }

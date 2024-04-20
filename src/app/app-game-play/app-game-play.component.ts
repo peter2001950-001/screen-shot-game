@@ -56,9 +56,8 @@ export class AppGamePlayComponent implements OnInit {
       if(nextPage == "game"){
         this.ngOnInit();
       }else{
-        this.router.navigate([this.engine.getNextPage()]);
+        this.router.navigate([nextPage]);
       }
-      this.counter.up("screen-shot-game", "single-game-play", true);
     }, 1500);
   }
 

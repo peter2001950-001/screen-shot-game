@@ -11,6 +11,7 @@ import { AppPolekaPageComponent } from './app-poleka-page/app-poleka-page.compon
 import { AppOliaSePageComponent } from './app-olia-se-page/app-olia-se-page.component';
 import { AppSuperSiPageComponent } from './app-super-si-page/app-super-si-page.component';
 import { GameEngineService } from './game-engine.service';
+import { AppInfoPageComponent } from './app-info-page/app-info-page.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { GameEngineService } from './game-engine.service';
     AppGamePlayComponent,
     AppPolekaPageComponent,
     AppOliaSePageComponent,
-    AppSuperSiPageComponent
+    AppSuperSiPageComponent,
+    AppInfoPageComponent
   ],
   imports: [
     BrowserModule,

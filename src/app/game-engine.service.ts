@@ -22,7 +22,6 @@ export class GameEngineService {
 
   public getNextPage(): string{
     if(this.gamesCount.value > this.totalGames){
-
       this.gamesCount.next(1);
       if(this.score>=0 && this.score<=4){
         return "olia-se"
