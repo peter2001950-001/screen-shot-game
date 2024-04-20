@@ -1,0 +1,13 @@
+.background{
+  background-image: url("/assets/background.png");
+    height: 100%;
+    max-width: 535px;
+    background-size: cover;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+.background.isBlurred{
+  background-image: url("/assets/background-blur.png");
+}

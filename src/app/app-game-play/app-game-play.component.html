@@ -1,0 +1,11 @@
+<div class="game-play-window" (click)="stop()">
+  <h1>{{numberOfGames}}/10</h1>
+  <div class="glass-group">
+    <div class="glass-piece">
+      <img src="/assets/glass.png">
+    </div>
+    <div class="liquid" [style.height]="height+'px'">
+      <img src="/assets/gradient.png" [style.transform]="'translateY('+ transform + 'px) translateX(-50%)'">
+    </div>
+  </div>
+</div>
