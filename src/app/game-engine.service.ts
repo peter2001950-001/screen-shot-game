@@ -10,7 +10,7 @@ export class GameEngineService {
 
   private score: number = 0;
   public gamesCount: BehaviorSubject<number> = new BehaviorSubject<number>(1);
-  private totalGames: number = 10;
+  private totalGames: number = 6;
   public winner(){
       this.score++;
       this.gamesCount.next(this.gamesCount.value+1);
@@ -22,15 +22,19 @@ export class GameEngineService {
 
   public getNextPage(): string{
     if(this.gamesCount.value > this.totalGames){
-      this.gamesCount.next(1);
-      if(this.score>=0 && this.score<=4){
+      if(this.score>=0 && this.score<=2){
         return "olia-se"
-      }else if(this.score>=5 && this.score<=7){
+      }else if(this.score>=3 && this.score<=4){
         return "poleka"
       }else{
         return "super-si"
       }
     }
     return "game";
+  }
+
+  public restart(){
+    this.score = 0;
+    this.gamesCount.next(1);
   }
 }

@@ -5,6 +5,7 @@ import { AppGamePlayComponent } from './app-game-play/app-game-play.component';
 import { AppPolekaPageComponent } from './app-poleka-page/app-poleka-page.component';
 import { AppOliaSePageComponent } from './app-olia-se-page/app-olia-se-page.component';
 import { AppSuperSiPageComponent } from './app-super-si-page/app-super-si-page.component';
+import { AppInfoPageComponent } from './app-info-page/app-info-page.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: "super-si",
     component: AppSuperSiPageComponent
+  },
+  {
+    path: "info",
+    component: AppInfoPageComponent
   }
 ];
 

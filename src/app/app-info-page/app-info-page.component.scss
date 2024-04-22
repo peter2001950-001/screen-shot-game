@@ -1,0 +1,47 @@
+.info{
+  padding: 5vh 10vw;
+  text-align: center;
+  padding-top: 20vh;
+  color: white;
+  font-family: sans-serif;
+
+  h1{
+    margin: 0;
+    font-size: 26px;
+  }
+
+  p{
+    margin-top: 7vw;
+    font-size: 20px;
+  }
+}
+
+.start-button{
+  height: 10vh;
+  position: relative;
+
+  img{
+    position: absolute;
+    max-width: 180px;
+    width: 66vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+}
+
+.glasses-example{
+  height: 25vh;
+  position: relative;
+
+  img{
+    position: absolute;
+    max-width: 400px;
+    width: 80vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+  }
+}

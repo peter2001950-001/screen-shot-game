@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { CounterAPI } from 'counterapi';
 
 @Component({
   selector: 'app-app-info-page',
@@ -7,4 +9,13 @@ import { Component } from '@angular/core';
 })
 export class AppInfoPageComponent {
 
+  private counter = new CounterAPI();
+  constructor(private router: Router){
+
+  }
+
+  start(){
+    this.router.navigate(["game"]);
+    this.counter.up("screen-shot-game", "single-game-play", true);
+  }
 }

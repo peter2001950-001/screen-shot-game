@@ -29,8 +29,8 @@ export class AppGamePlayComponent implements OnInit {
   ngOnInit(): void {
     this.height =  0;
     this.transform =  -360
-    var intervalFast = this.getRandomInt(50)+20;
-    var step = this.getRandomInt(2) + 3;
+    var intervalFast = 12 - this.numberOfGames;
+    var step = 1
 
    this.interval = setInterval(() =>{
       this.height += step;
